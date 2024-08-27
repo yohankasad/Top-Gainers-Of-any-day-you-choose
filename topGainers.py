@@ -55,10 +55,10 @@ def process_date(date_str):
     return results
 
 def main():
-    start_date = '2024-06-10'
+    start_date = '2024-02-12'
     dates = [(datetime.strptime(start_date, '%Y-%m-%d') + timedelta(days=i)).strftime('%Y-%m-%d') for i in range(150)]
     
-    with Pool(processes=6) as pool:
+    with Pool(processes=4) as pool:
         all_results = pool.map(process_date, dates)
     
     # Flatten the list of results

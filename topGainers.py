@@ -4,8 +4,8 @@ from datetime import datetime, timedelta
 from operator import itemgetter
 from multiprocessing import Pool
 
-filePath = "C:\\Yohan_CS_Work\\Python\\project\\topGainer\\TopGainer.xlsx"
-filePathOutput = "C:\\Yohan_CS_Work\\Python\\project\\topGainer\\TopGainerOutput.xlsx"
+filePath = "your file path"
+filePathOutput = "your file path"
 
 def load_data():
     return pd.read_excel(filePath, engine='openpyxl')
